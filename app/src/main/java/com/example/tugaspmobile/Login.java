@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity {
                 if (nimText.isEmpty() || passwordText.isEmpty()){
                     Toast.makeText(getApplicationContext(), "Isikan Semua Data", Toast.LENGTH_SHORT).show();
                 } else {
-                    //jalankan query
+                    //menjalankan query
                     UserDatabase userDatabase = UserDatabase.getUserDatabase(getApplicationContext());
                     final UserDao userDao = userDatabase.userDao();
                     new Thread(new Runnable() {
